@@ -1,3 +1,2 @@
-# deshi_bazaar
-
-A new Flutter project.
+# grocery-apk
+Android, iOS, and Web app developed on flutter
