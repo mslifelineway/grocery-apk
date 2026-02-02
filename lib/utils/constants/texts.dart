@@ -10,4 +10,6 @@ class AppTexts {
       "Change sub titlefor onboarding animation 2.";
   static const String onBoardingSubTitle3 =
       "Change sub titlefor onboarding animation 3.";
+
+  //
 }

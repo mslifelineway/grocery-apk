@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import "package:deshi_bazaar/utils/constants/image_strings.dart";
 import 'package:deshi_bazaar/utils/constants/sizes.dart';
-import 'package:deshi_bazaar/utils/constants/texts.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({
@@ -19,16 +17,13 @@ class OnboardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: AppSizes.defaultSpace),
+      padding: EdgeInsets.only(top: AppSizes.defaultSpace),
       child: Column(
         children: [
-          Lottie.asset(AppImages.onboardingAnimation1),
+          Lottie.asset(animation),
+          Text(title, style: Theme.of(context).textTheme.headlineMedium),
           Text(
-            AppTexts.onBoardingTitle1,
-            style: Theme.of(context).textTheme.headlineMedium,
-          ),
-          Text(
-            AppTexts.onBoardingSubTitle1,
+            subTitle,
             style: Theme.of(context).textTheme.headlineSmall,
             textAlign: TextAlign.center,
           ),
