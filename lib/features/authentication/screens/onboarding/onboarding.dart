@@ -8,6 +8,8 @@ import 'package:deshi_bazaar/features/authentication/screens/onboarding/widgets/
 import 'package:deshi_bazaar/utils/device/device.utility.dart';
 import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import "./widgets/onboarding_next_button.dart";
+import "./widgets/onboarding_skip_button.dart";
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -24,47 +26,38 @@ class OnboardingScreen extends StatelessWidget {
           ),
           child: Stack(
             children: [
-              Positioned.fill(
-                child:
-                    // Scrollable page
-                    PageView(
-                      controller: controller.pageController,
-                      onPageChanged: controller.onPageChanged,
-                      physics: const PageScrollPhysics(),
-                      children: [
-                        OnboardingPage(
-                          animation: AppImages.onboardingAnimation1,
-                          title: AppTexts.onBoardingTitle1,
-                          subTitle: AppTexts.onBoardingSubTitle1,
-                        ),
-                        OnboardingPage(
-                          animation: AppImages.onboardingAnimation2,
-                          title: AppTexts.onBoardingTitle2,
-                          subTitle: AppTexts.onBoardingSubTitle2,
-                        ),
-                        OnboardingPage(
-                          animation: AppImages.onboardingAnimation3,
-                          title: AppTexts.onBoardingTitle3,
-                          subTitle: AppTexts.onBoardingSubTitle3,
-                        ),
-                      ],
-                    ),
+              // Scrollable page
+              PageView(
+                controller: controller.pageController,
+                onPageChanged: controller.onPageChanged,
+                physics: const PageScrollPhysics(),
+                children: [
+                  OnboardingPage(
+                    animation: AppImages.onboardingAnimation1,
+                    title: AppTexts.onBoardingTitle1,
+                    subTitle: AppTexts.onBoardingSubTitle1,
+                  ),
+                  OnboardingPage(
+                    animation: AppImages.onboardingAnimation2,
+                    title: AppTexts.onBoardingTitle2,
+                    subTitle: AppTexts.onBoardingSubTitle2,
+                  ),
+                  OnboardingPage(
+                    animation: AppImages.onboardingAnimation3,
+                    title: AppTexts.onBoardingTitle3,
+                    subTitle: AppTexts.onBoardingSubTitle3,
+                  ),
+                ],
               ),
+
               // Indicator
               OnboardingDotNavigation(),
 
-              // Navigation Controller button
-              NextButton(),
-
               // Skip button
-              Positioned(
-                top: DeviceUtils.getAppBarHeight(),
-                right: 0,
-                child: TextButton(
-                  onPressed: controller.handleSkipClick,
-                  child: Text('Skip'),
-                ),
-              ),
+              OnboardingSkipButton(),
+
+              // Navigation Controller button
+              OnboardingNextButton(),
             ],
           ),
         ),
@@ -87,32 +80,13 @@ class OnboardingDotNavigation extends StatelessWidget {
       child: Center(
         child: SmoothPageIndicator(
           controller: controller.pageController,
-          onDotClicked: controller.handleDotNavigationClick,
+          onDotClicked: controller.onDotClicked,
           count: controller.totalPages,
           effect: const ExpandingDotsEffect(
             dotHeight: 6.0,
             dotWidth: AppSizes.defaultSpace,
           ),
         ),
-      ),
-    );
-  }
-}
-
-class NextButton extends StatelessWidget {
-  NextButton({super.key});
-
-  final controller = Get.find<OnboardingController>();
-
-  @override
-  Widget build(BuildContext context) {
-    return Positioned(
-      left: AppSizes.defaultSpace,
-      right: AppSizes.defaultSpace,
-      bottom: AppSizes.spaceBetweenItems / 2,
-      child: AppElevatedButton(
-        onPressed: controller.handleNextClick,
-        child: Obx(() => Text(controller.isLastPage ? 'Continue' : 'Next')),
       ),
     );
   }

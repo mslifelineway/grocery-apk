@@ -12,7 +12,7 @@ class OnboardingController extends GetxController {
     currentIndex.value = index;
   }
 
-  void handleDotNavigationClick(dynamic index) {
+  void onDotClicked(dynamic index) {
     pageController.animateToPage(
       index,
       duration: const Duration(milliseconds: 300),
@@ -20,7 +20,7 @@ class OnboardingController extends GetxController {
     );
   }
 
-  void handleNextClick() {
+  void handleNext() {
     if (currentIndex.value < totalPages - 1) {
       pageController.nextPage(
         duration: const Duration(milliseconds: 300),
@@ -29,7 +29,13 @@ class OnboardingController extends GetxController {
     }
   }
 
-  void handleSkipClick() {}
+  void handleSkp() {
+    pageController.animateToPage(
+      totalPages - 1,
+      duration: const Duration(milliseconds: 300),
+      curve: Curves.easeInOut,
+    );
+  }
 
   bool get isLastPage => currentIndex.value == totalPages - 1;
 
