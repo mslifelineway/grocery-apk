@@ -1,3 +1,6 @@
 {
-    "cmake.sourceDirectory": "F:/MERN/Grocery App/deshi_bazaar/linux"
+    "cmake.sourceDirectory": "F:/MERN/Grocery App/deshi_bazaar/linux",
+    "cSpell.words": [
+        "deshi"
+    ]
 }

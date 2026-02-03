@@ -1,3 +1,4 @@
+import 'package:deshi_bazaar/features/authentication/screens/login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -26,10 +27,12 @@ class OnboardingController extends GetxController {
         duration: const Duration(milliseconds: 300),
         curve: Curves.easeInOut,
       );
+    } else {
+      Get.offAll(() => Login());
     }
   }
 
-  void handleSkp() {
+  void handleSkip() {
     pageController.animateToPage(
       totalPages - 1,
       duration: const Duration(milliseconds: 300),

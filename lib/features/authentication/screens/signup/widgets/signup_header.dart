@@ -1,0 +1,20 @@
+import 'package:deshi_bazaar/utils/constants/texts.dart';
+import 'package:flutter/material.dart';
+
+class SignUpHeader extends StatelessWidget {
+  const SignUpHeader({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          AppTexts.signupTitle,
+          style: Theme.of(context).textTheme.headlineSmall,
+        ),
+      ],
+    );
+  }
+}

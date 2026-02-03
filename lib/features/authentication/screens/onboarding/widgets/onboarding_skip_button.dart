@@ -14,7 +14,7 @@ class OnboardingSkipButton extends StatelessWidget {
       () => controller.isLastPage ? SizedBox() : Positioned(
         top: DeviceUtils.getAppBarHeight(),
         right: 0,
-        child: TextButton(onPressed: controller.handleSkp, child: Text('Skip')),
+        child: TextButton(onPressed: controller.handleSkip, child: Text('Skip')),
       ),
     );
   }

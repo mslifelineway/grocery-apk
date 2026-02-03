@@ -1,3 +1,3 @@
 class APIConstants {
-  static const String SecretAPIKey = "api_key";
+  static const String secretAPIKey = "api_key";
 }

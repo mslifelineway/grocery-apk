@@ -9,6 +9,7 @@ import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import "./widgets/onboarding_next_button.dart";
 import "./widgets/onboarding_skip_button.dart";
+import 'package:deshi_bazaar/common/styles/padding.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -20,9 +21,7 @@ class OnboardingScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(
-            horizontal: AppSizes.defaultSpace,
-          ),
+          padding: AppPadding.screenPadding,
           child: Stack(
             children: [
               // Scrollable page
