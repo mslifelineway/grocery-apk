@@ -1,5 +1,7 @@
+import 'package:deshi_bazaar/features/authentication/screens/forget_password/forget_password.dart';
 import 'package:deshi_bazaar/utils/constants/texts.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class LoginRememberMe extends StatelessWidget {
   const LoginRememberMe({super.key});
@@ -15,7 +17,10 @@ class LoginRememberMe extends StatelessWidget {
             Text(AppTexts.rememberMe),
           ],
         ),
-        Text(AppTexts.forgetPassword),
+        TextButton(
+          onPressed: () => Get.to(ForgetPassword()),
+          child: Text(AppTexts.forgetPassword),
+        ),
       ],
     );
   }

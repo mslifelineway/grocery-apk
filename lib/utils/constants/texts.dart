@@ -11,6 +11,11 @@ class AppTexts {
   static const String onBoardingSubTitle3 =
       "Change sub title for onboarding animation 3.";
 
+  /// ----- COMMON TEXTS -----
+  static const String submit = 'Submit';
+  static const String done = 'Done';
+  static const String testUserEmail = 'user@email.com';
+
   /// Login screen
   static const String loginTitle = "Deshi Bazaar";
   static const String loginSubTitle =
@@ -33,4 +38,17 @@ class AppTexts {
   static const String and = 'and';
   static const String termsOfUse = 'Terms of use';
   static const String orSignupWith = 'Or Sign up With';
+
+  /// Forget Password screen
+  static const String forgetPasswordTitle = "Forget Password";
+  static const String forgetPasswordSubTitle =
+      "No worries, we'll send you a reset link to your email.";
+
+  /// Reset Password screen
+  static const String resetPasswordTitle = "Password Reset Email Sent";
+  static const String passwordResetLinkSent =
+      "We've sent a password reset link to your email address";
+  static const String checkYourInbox =
+      "Please check your inbox and follow the instructions to reset your password.";
+  static const String resendEmail = 'Resend Email';
 }

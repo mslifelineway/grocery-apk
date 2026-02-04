@@ -15,4 +15,8 @@ class AppImages {
       'assets/animations/onboarding/onboarding2.json';
   static const String onboardingAnimation3 =
       'assets/animations/onboarding/onboarding3.json';
+
+  /// ---- PASSWORD RESET
+  static const String passwordResetSentImage =
+      'assets/images/password_reset_sent.png';
 }

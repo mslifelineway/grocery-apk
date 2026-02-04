@@ -2,8 +2,8 @@ import 'package:deshi_bazaar/utils/constants/sizes.dart';
 import 'package:deshi_bazaar/utils/constants/texts.dart';
 import 'package:flutter/material.dart';
 
-class LoginHeader extends StatelessWidget {
-  const LoginHeader({super.key});
+class ForgetPasswordHeader extends StatelessWidget {
+  const ForgetPasswordHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,13 +11,17 @@ class LoginHeader extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        /// Title
         Text(
-          AppTexts.loginTitle,
+          AppTexts.forgetPasswordTitle,
           style: Theme.of(context).textTheme.headlineSmall,
         ),
-        SizedBox(height: AppSizes.sm),
+
+        SizedBox(height: AppSizes.spaceBetweenItems),
+
+        /// Sub Title
         Text(
-          AppTexts.loginSubTitle,
+          AppTexts.forgetPasswordSubTitle,
           style: Theme.of(context).textTheme.bodySmall,
         ),
       ],
