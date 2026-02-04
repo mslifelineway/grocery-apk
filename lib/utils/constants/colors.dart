@@ -22,6 +22,7 @@ class AppColors {
 
   //Background Colors
   static const Color light = Color(0xFFF6F6F6);
+  static const Color dark = Color(0xFF272727);
   static const Color bgLight = Color(0xFFF6F6F6);
   static const Color bgDark = Color(0xFF272727);
   static const Color bgPrimary = Color(0xFF0CA201);

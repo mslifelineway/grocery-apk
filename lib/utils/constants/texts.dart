@@ -16,6 +16,8 @@ class AppTexts {
   static const String done = 'Done';
   static const String continueTxt = 'Continue';
   static const String testUserEmail = 'user@email.com';
+  static const String testUserName = 'John Doe';
+  static const String testLocation = 'Bettiah, Bihar, India';
   static const String home = 'Home';
   static const String store = 'Store';
   static const String wishlist = 'Wishlist';
@@ -68,4 +70,7 @@ class AppTexts {
   static const String signupSuccessTitle = "Welcome! Your account is ready";
   static const String signupSuccessSubTitle =
       "Your account has been created successfully. You can now log in.";
+
+  /// Home Screen
+  static const String test = "Deshi Bazaar";
 }
