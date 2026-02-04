@@ -21,9 +21,11 @@ class AppColors {
   static const Color textAccent = Colors.white;
 
   //Background Colors
+  static const Color light = Color(0xFFF6F6F6);
   static const Color bgLight = Color(0xFFF6F6F6);
   static const Color bgDark = Color(0xFF272727);
-  static const Color bgPrimary = Color(0xFFF3F5FF);
+  static const Color bgPrimary = Color(0xFF0CA201);
+  static const Color bgSecondary = Color(0xFFFFDB24);
 
   //Background Container Colors
   static const Color lightContainer = Color(0xFFF6F6F6);

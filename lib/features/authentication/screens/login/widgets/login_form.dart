@@ -1,8 +1,10 @@
 import 'package:deshi_bazaar/common/widgets/button/elevated_button.dart';
 import 'package:deshi_bazaar/features/authentication/screens/login/widgets/login_remember_me.dart';
+import 'package:deshi_bazaar/navigation_menu.dart';
 import 'package:deshi_bazaar/utils/constants/sizes.dart';
 import 'package:deshi_bazaar/utils/constants/texts.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class LoginForm extends StatelessWidget {
@@ -39,7 +41,10 @@ class LoginForm extends StatelessWidget {
         SizedBox(height: AppSizes.spaceBetweenSections),
 
         /// Sign In Button
-        AppElevatedButton(onPressed: () {}, child: Text(AppTexts.signIn)),
+        AppElevatedButton(
+          onPressed: () => Get.to(() => NavigationMenu()),
+          child: Text(AppTexts.signIn),
+        ),
       ],
     );
   }

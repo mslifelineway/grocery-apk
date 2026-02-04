@@ -35,8 +35,8 @@ class DeviceUtils {
     return MediaQuery.of(Get.context!).size.height;
   }
 
-  static double getScreenWidth(BuildContext context) {
-    return MediaQuery.of(context).size.width;
+  static double getScreenWidth() {
+    return MediaQuery.of(Get.context!).size.width;
   }
 
   static double getPixelRatio() {
@@ -113,5 +113,9 @@ class DeviceUtils {
     } else {
       throw 'Could not launch $url';
     }
+  }
+
+  static bool isDarkMode(BuildContext context) {
+    return Theme.of(context).brightness == Brightness.dark;
   }
 }

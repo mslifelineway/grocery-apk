@@ -16,6 +16,10 @@ class AppTexts {
   static const String done = 'Done';
   static const String continueTxt = 'Continue';
   static const String testUserEmail = 'user@email.com';
+  static const String home = 'Home';
+  static const String store = 'Store';
+  static const String wishlist = 'Wishlist';
+  static const String profile = 'Profile';
 
   /// Login screen
   static const String loginTitle = "Deshi Bazaar";
