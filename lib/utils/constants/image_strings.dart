@@ -8,6 +8,10 @@ class AppImages {
   static const String googleIcon = "assets/icons/google.png";
   static const String facebookIcon = "assets/icons/facebook.png";
 
+  /// ---- Common Images
+  static const String mailImage = 'assets/images/mail.png';
+  static const String successTickImage = 'assets/images/success_tick.png';
+
   /// ------ Onboarding animations or images
   static const String onboardingAnimation1 =
       'assets/animations/onboarding/onboarding1.json';

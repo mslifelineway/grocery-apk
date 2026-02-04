@@ -14,6 +14,7 @@ class AppTexts {
   /// ----- COMMON TEXTS -----
   static const String submit = 'Submit';
   static const String done = 'Done';
+  static const String continueTxt = 'Continue';
   static const String testUserEmail = 'user@email.com';
 
   /// Login screen
@@ -48,7 +49,19 @@ class AppTexts {
   static const String resetPasswordTitle = "Password Reset Email Sent";
   static const String passwordResetLinkSent =
       "We've sent a password reset link to your email address";
-  static const String checkYourInbox =
+  static const String checkYourInboxToReset =
       "Please check your inbox and follow the instructions to reset your password.";
   static const String resendEmail = 'Resend Email';
+
+  /// Verify email address screen
+  static const String verifyEmailAddressTitle = "Verify Your Email Address";
+  static const String verifyEmailLinkSent =
+      "We have sent a verification link to your email address";
+  static const String checkYourInboxToVerifyEmail =
+      "Please check your inbox and click on the link to verify your email.";
+
+  /// Signup Success screen
+  static const String signupSuccessTitle = "Welcome! Your account is ready";
+  static const String signupSuccessSubTitle =
+      "Your account has been created successfully. You can now log in.";
 }

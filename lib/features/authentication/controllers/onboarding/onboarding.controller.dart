@@ -28,7 +28,7 @@ class OnboardingController extends GetxController {
         curve: Curves.easeInOut,
       );
     } else {
-      Get.offAll(() => Login());
+      Get.offAll(() => LoginScreen());
     }
   }
 

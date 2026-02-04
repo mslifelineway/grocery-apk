@@ -1,30 +1,20 @@
 import 'package:deshi_bazaar/common/styles/padding.dart';
 import 'package:deshi_bazaar/common/widgets/button/elevated_button.dart';
-import 'package:deshi_bazaar/features/authentication/screens/forget_password/forget_password.dart';
 import 'package:deshi_bazaar/features/authentication/screens/login/login.dart';
 import 'package:deshi_bazaar/utils/constants/image_strings.dart';
 import 'package:deshi_bazaar/utils/constants/sizes.dart';
 import 'package:deshi_bazaar/utils/constants/texts.dart';
 import 'package:deshi_bazaar/utils/device/device.utility.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class ResetPasswordScreen extends StatelessWidget {
-  const ResetPasswordScreen({super.key});
+class SignUpSuccessScreen extends StatelessWidget {
+  const SignUpSuccessScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        actions: [
-          IconButton(
-            onPressed: () => Get.offAll(() => LoginScreen()),
-            icon: Icon(CupertinoIcons.clear),
-          ),
-        ],
-      ),
+      appBar: AppBar(automaticallyImplyLeading: false),
       body: SingleChildScrollView(
         padding: AppPadding.screenPadding,
         child: Column(
@@ -33,7 +23,7 @@ class ResetPasswordScreen extends StatelessWidget {
           children: [
             /// Illustration Image
             Image.asset(
-              AppImages.passwordResetSentImage,
+              AppImages.successTickImage,
               height:
                   DeviceUtils.getScreenHeight() * 0.3, // 30% of screen height
             ),
@@ -41,7 +31,7 @@ class ResetPasswordScreen extends StatelessWidget {
 
             ///Header
             Text(
-              AppTexts.resetPasswordTitle,
+              AppTexts.signupSuccessTitle,
               style: Theme.of(context).textTheme.headlineSmall,
             ),
             SizedBox(height: AppSizes.spaceBetweenItems),
@@ -50,35 +40,17 @@ class ResetPasswordScreen extends StatelessWidget {
             RichText(
               text: TextSpan(
                 style: Theme.of(context).textTheme.bodySmall,
-                children: [
-                  TextSpan(text: AppTexts.passwordResetLinkSent),
-                  TextSpan(
-                    text: " ${AppTexts.testUserEmail}. ",
-                    style: Theme.of(context).textTheme.bodyLarge,
-                  ),
-                  TextSpan(text: AppTexts.checkYourInboxToReset),
-                ],
+                children: [TextSpan(text: AppTexts.signupSuccessSubTitle)],
               ),
             ),
             SizedBox(height: AppSizes.spaceBetweenSections),
 
-            /// Done Button
+            /// Continue Button
             AppElevatedButton(
               onPressed: () => Get.offAll(() => LoginScreen()),
-              child: Text(AppTexts.done),
+              child: Text(AppTexts.continueTxt),
             ),
             SizedBox(height: AppSizes.spaceBetweenItems / 2),
-
-            /// Resend Email button
-            Center(
-              child: TextButton(
-                onPressed: () => Get.offAll(() => ForgetPassword()),
-                child: Text(
-                  AppTexts.resendEmail,
-                  style: Theme.of(context).textTheme.bodyMedium,
-                ),
-              ),
-            ),
           ],
         ),
       ),

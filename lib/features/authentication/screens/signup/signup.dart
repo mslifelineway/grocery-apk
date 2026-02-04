@@ -7,8 +7,8 @@ import 'package:deshi_bazaar/utils/constants/sizes.dart';
 import 'package:deshi_bazaar/utils/constants/texts.dart';
 import 'package:flutter/material.dart';
 
-class SignUp extends StatelessWidget {
-  const SignUp({super.key});
+class SignUpScreen extends StatelessWidget {
+  const SignUpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

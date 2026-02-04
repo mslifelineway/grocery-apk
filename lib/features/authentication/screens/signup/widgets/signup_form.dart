@@ -1,7 +1,9 @@
 import 'package:deshi_bazaar/common/widgets/checkbox/privacy_policy_checkbox.dart';
+import 'package:deshi_bazaar/features/authentication/screens/signup/verify_email_address.dart';
 import 'package:deshi_bazaar/utils/constants/sizes.dart';
 import 'package:deshi_bazaar/utils/constants/texts.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:deshi_bazaar/common/widgets/button/elevated_button.dart';
 
@@ -67,7 +69,7 @@ class SignUpForm extends StatelessWidget {
 
         /// Sign Up In Button
         AppElevatedButton(
-          onPressed: () {},
+          onPressed: () => Get.to(() => VerifyEmailAddressScreen()),
           child: Text(AppTexts.createAccount),
         ),
       ],
