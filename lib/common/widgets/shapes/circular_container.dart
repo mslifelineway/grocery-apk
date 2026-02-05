@@ -10,6 +10,7 @@ class CircularContainer extends StatelessWidget {
     this.radius = 500,
     this.margin,
     this.padding,
+    this.child,
   });
 
   final double height;
@@ -17,6 +18,7 @@ class CircularContainer extends StatelessWidget {
   final Color backgroundColor;
   final double radius;
   final EdgeInsetsGeometry? margin, padding;
+  final Widget? child;
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +31,7 @@ class CircularContainer extends StatelessWidget {
         color: backgroundColor,
         borderRadius: BorderRadius.circular(radius),
       ),
+      child: child,
     );
   }
 }

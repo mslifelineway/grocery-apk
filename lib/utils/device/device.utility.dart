@@ -115,7 +115,10 @@ class DeviceUtils {
     }
   }
 
-  static bool isDarkMode() {
-    return Theme.of(Get.context!).brightness == Brightness.dark;
-  }
+  // static bool isDarkMode() {
+  //   return Theme.of(Get.context!).brightness == Brightness.dark;
+  // }
+
+  static bool get isDarkMode =>
+      Theme.of(Get.context!).brightness == Brightness.dark;
 }

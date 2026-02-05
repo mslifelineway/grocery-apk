@@ -12,7 +12,6 @@ class NavigationMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final NavigationController controller = Get.put(NavigationController());
-    bool darkMode = DeviceUtils.isDarkMode();
 
     return Scaffold(
       body: Obx(
@@ -23,10 +22,12 @@ class NavigationMenu extends StatelessWidget {
           elevation: 0,
           selectedIndex: controller.selectedIndex.value,
           onDestinationSelected: controller.onDestinationSelected,
-          indicatorColor: darkMode
+          indicatorColor: DeviceUtils.isDarkMode
               ? AppColors.bgLight.withAlpha(25)
               : AppColors.bgDark.withAlpha(25),
-          backgroundColor: darkMode ? AppColors.bgDark : AppColors.bgLight,
+          backgroundColor: DeviceUtils.isDarkMode
+              ? AppColors.bgDark
+              : AppColors.bgLight,
           destinations: [
             NavigationDestination(
               icon: Icon(Iconsax.home),

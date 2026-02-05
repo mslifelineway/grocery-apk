@@ -15,7 +15,7 @@ class CartCounterIcon extends StatelessWidget {
       children: [
         Icon(
           Iconsax.bag_2,
-          color: DeviceUtils.isDarkMode() ? AppColors.light : AppColors.dark,
+          color: DeviceUtils.isDarkMode ? AppColors.dark : AppColors.light,
           size: AppSizes.iconLg,
         ),
         itemCount > 0
@@ -25,16 +25,16 @@ class CartCounterIcon extends StatelessWidget {
                   width: AppSizes.iconSm,
                   height: AppSizes.iconSm,
                   decoration: BoxDecoration(
-                    color: DeviceUtils.isDarkMode()
-                        ? AppColors.bgDark
-                        : AppColors.bgLight,
+                    color: DeviceUtils.isDarkMode
+                        ? AppColors.dark
+                        : AppColors.light,
                     shape: BoxShape.circle,
                   ),
                   child: Center(
                     child: Text(
                       itemCount.toString(),
                       style: Theme.of(context).textTheme.bodySmall!.apply(
-                        color: DeviceUtils.isDarkMode()
+                        color: DeviceUtils.isDarkMode
                             ? AppColors.light
                             : AppColors.dark,
                         fontSizeFactor: 0.8,

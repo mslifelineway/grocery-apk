@@ -9,8 +9,6 @@ class HomeAppBarTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isDarkMode = DeviceUtils.isDarkMode();
-
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -18,7 +16,7 @@ class HomeAppBarTitle extends StatelessWidget {
         Text(
           AppTexts.testUserName,
           style: Theme.of(context).textTheme.headlineSmall!.apply(
-            color: isDarkMode ? AppColors.light : AppColors.dark,
+            color: DeviceUtils.isDarkMode ? AppColors.dark : AppColors.light,
           ),
         ),
 
@@ -28,7 +26,7 @@ class HomeAppBarTitle extends StatelessWidget {
             /// Location Icon
             Icon(
               Icons.location_on,
-              color: isDarkMode ? AppColors.light : AppColors.dark,
+              color: DeviceUtils.isDarkMode ? AppColors.dark : AppColors.light,
               size: AppSizes.iconSm,
             ),
             SizedBox(width: AppSizes.xs),
@@ -37,7 +35,9 @@ class HomeAppBarTitle extends StatelessWidget {
             Text(
               AppTexts.testLocation,
               style: Theme.of(context).textTheme.bodySmall!.apply(
-                color: isDarkMode ? AppColors.light : AppColors.dark,
+                color: DeviceUtils.isDarkMode
+                    ? AppColors.dark
+                    : AppColors.light,
               ),
             ),
           ],

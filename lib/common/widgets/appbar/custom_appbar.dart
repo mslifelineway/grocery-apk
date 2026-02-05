@@ -25,8 +25,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isDarkMode = DeviceUtils.isDarkMode();
-
     return Padding(
       padding: EdgeInsetsGeometry.symmetric(horizontal: AppSizes.md),
       child: AppBar(
@@ -37,7 +35,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             ? IconButton(
                 icon: Icon(
                   Iconsax.arrow_left,
-                  color: isDarkMode ? AppColors.light : AppColors.dark,
+                  color: DeviceUtils.isDarkMode
+                      ? AppColors.light
+                      : AppColors.dark,
                 ),
                 onPressed: Get.back,
               )
@@ -45,7 +45,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             ? IconButton(
                 icon: Icon(
                   leadingIcon,
-                  color: isDarkMode ? AppColors.light : AppColors.dark,
+                  color: DeviceUtils.isDarkMode
+                      ? AppColors.light
+                      : AppColors.dark,
                 ),
                 onPressed: onLeadingIconPressed,
               )

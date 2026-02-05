@@ -1,8 +1,8 @@
 import 'package:deshi_bazaar/common/widgets/shapes/circular_container.dart';
 import 'package:deshi_bazaar/common/widgets/shapes/u_shape_container.dart';
 import 'package:deshi_bazaar/utils/constants/colors.dart';
-import 'package:deshi_bazaar/utils/device/device.utility.dart';
 import 'package:flutter/material.dart';
+import 'package:deshi_bazaar/utils/constants/sizes.dart';
 
 class PrimaryHeaderContainer extends StatelessWidget {
   const PrimaryHeaderContainer({super.key, this.child});
@@ -14,7 +14,7 @@ class PrimaryHeaderContainer extends StatelessWidget {
     return UShapeContainer(
       child: Container(
         color: AppColors.bgPrimary,
-        height: DeviceUtils.getScreenHeight() * 0.4,
+        height: AppSizes.primaryHeaderHeight,
         child: Stack(
           children: [
             /// Decorative Circular Containers
@@ -23,8 +23,8 @@ class PrimaryHeaderContainer extends StatelessWidget {
               right: -160,
               child: CircularContainer(
                 backgroundColor: AppColors.bgLight.withValues(alpha: 0.1),
-                height: DeviceUtils.getScreenHeight() * 0.4,
-                width: DeviceUtils.getScreenHeight() * 0.4,
+                height: AppSizes.primaryHeaderHeight,
+                width: AppSizes.primaryHeaderHeight,
                 radius: 500,
               ),
             ),
@@ -35,8 +35,8 @@ class PrimaryHeaderContainer extends StatelessWidget {
               right: -250,
               child: CircularContainer(
                 backgroundColor: AppColors.bgLight.withValues(alpha: 0.1),
-                height: DeviceUtils.getScreenHeight() * 0.4,
-                width: DeviceUtils.getScreenHeight() * 0.4,
+                height: AppSizes.primaryHeaderHeight,
+                width: AppSizes.primaryHeaderHeight,
                 radius: 500,
               ),
             ),

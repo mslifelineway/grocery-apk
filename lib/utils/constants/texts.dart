@@ -22,6 +22,7 @@ class AppTexts {
   static const String store = 'Store';
   static const String wishlist = 'Wishlist';
   static const String profile = 'Profile';
+  static const String searchProducts = 'Search your products';
 
   /// Login screen
   static const String loginTitle = "Deshi Bazaar";
@@ -73,4 +74,6 @@ class AppTexts {
 
   /// Home Screen
   static const String test = "Deshi Bazaar";
+  static const String popularCategories = "Popular Categories";
+  static const String fruits = "Fruits";
 }

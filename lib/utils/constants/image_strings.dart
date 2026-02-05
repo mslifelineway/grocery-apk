@@ -7,6 +7,7 @@ class AppImages {
   // Icons
   static const String googleIcon = "assets/icons/google.png";
   static const String facebookIcon = "assets/icons/facebook.png";
+  static const String categoryImg = "assets/icons/category.png";
 
   /// ---- Common Images
   static const String mailImage = 'assets/images/mail.png';

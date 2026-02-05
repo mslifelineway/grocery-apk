@@ -24,6 +24,7 @@ class AppSizes {
   static const double btnWidth = 120.0;
   static const double btnRadius = 12.0;
   static const double btnElevation = 4.0;
+  static const double searchBarHeight = 55.0;
 
   //AppBar Height
   static const double appBarHeight = 56.0;
@@ -68,4 +69,10 @@ class AppSizes {
 
   //Grid view spacing
   static const double gridViewSpacing = 16.0;
+
+  //Primary Header Height
+  static const double primaryHeaderHeight = 320;
+
+  // Clip Path
+  static const double parabolaControlPoint = 30.0;
 }
