@@ -1,4 +1,4 @@
-import 'package:deshi_bazaar/features/shop/screens/home.dart';
+import 'package:deshi_bazaar/features/shop/screens/home/home.dart';
 import 'package:deshi_bazaar/utils/constants/colors.dart';
 import 'package:deshi_bazaar/utils/constants/texts.dart';
 import 'package:deshi_bazaar/utils/device/device.utility.dart';

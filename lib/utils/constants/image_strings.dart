@@ -4,6 +4,11 @@ class AppImages {
   //---- App Logos
   static const String darkAppLogo = "assets/logos/app-logo.png";
 
+  /// ----- BANNER
+  static const String banner1 = "assets/banners/banner1.jpg";
+  static const String banner2 = "assets/banners/banner2.jpg";
+  static const String banner3 = "assets/banners/banner3.jpg";
+
   // Icons
   static const String googleIcon = "assets/icons/google.png";
   static const String facebookIcon = "assets/icons/facebook.png";

@@ -1,4 +1,4 @@
-import 'package:deshi_bazaar/common/widgets/vertical_image_text.dart';
+import 'package:deshi_bazaar/common/widgets/images/vertical_image_text.dart';
 import 'package:deshi_bazaar/utils/constants/colors.dart';
 import 'package:deshi_bazaar/utils/constants/image_strings.dart';
 import 'package:deshi_bazaar/utils/constants/sizes.dart';
