@@ -7,7 +7,6 @@ class CircularContainer extends StatelessWidget {
     this.height = 400,
     this.width = 400,
     this.backgroundColor = AppColors.light,
-    this.radius = 500,
     this.margin,
     this.padding,
     this.child,
@@ -16,7 +15,6 @@ class CircularContainer extends StatelessWidget {
   final double height;
   final double width;
   final Color backgroundColor;
-  final double radius;
   final EdgeInsetsGeometry? margin, padding;
   final Widget? child;
 
@@ -29,7 +27,9 @@ class CircularContainer extends StatelessWidget {
       padding: padding,
       decoration: BoxDecoration(
         color: backgroundColor,
-        borderRadius: BorderRadius.circular(radius),
+        borderRadius: BorderRadius.circular(
+          1000,
+        ), // This widget is always a circular so give a higher value to make it circular
       ),
       child: child,
     );

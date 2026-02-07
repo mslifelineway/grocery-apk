@@ -25,7 +25,6 @@ class PrimaryHeaderContainer extends StatelessWidget {
                 backgroundColor: AppColors.bgLight.withValues(alpha: 0.1),
                 height: AppSizes.primaryHeaderHeight,
                 width: AppSizes.primaryHeaderHeight,
-                radius: 500,
               ),
             ),
 
@@ -37,7 +36,6 @@ class PrimaryHeaderContainer extends StatelessWidget {
                 backgroundColor: AppColors.bgLight.withValues(alpha: 0.1),
                 height: AppSizes.primaryHeaderHeight,
                 width: AppSizes.primaryHeaderHeight,
-                radius: 500,
               ),
             ),
 

@@ -23,6 +23,8 @@ class AppTexts {
   static const String wishlist = 'Wishlist';
   static const String profile = 'Profile';
   static const String searchProducts = 'Search your products';
+  static const String products = 'Products';
+  static const String testDiscountValue = '20% OFF';
 
   /// Login screen
   static const String loginTitle = "Deshi Bazaar";
@@ -46,6 +48,7 @@ class AppTexts {
   static const String and = 'and';
   static const String termsOfUse = 'Terms of use';
   static const String orSignupWith = 'Or Sign up With';
+  static const String viewAll = 'View All';
 
   /// Forget Password screen
   static const String forgetPasswordTitle = "Forget Password";
@@ -76,4 +79,16 @@ class AppTexts {
   static const String test = "Deshi Bazaar";
   static const String popularCategories = "Popular Categories";
   static const String fruits = "Fruits";
+}
+
+class StaticValues {
+  StaticValues._();
+
+  static Map<String, dynamic> product = {
+    'name': 'Bata Shoe Blue',
+    'brand': 'Bata',
+    'price': 400.00,
+  };
+
+  static String defaultCurrency = "INR";
 }

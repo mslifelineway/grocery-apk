@@ -7,7 +7,7 @@ class AppColors {
   static const Color primary = Color(0xFF0CA201);
   static const Color secondary = Color(0xFFFFDB24);
   static const Color accent = Color(0xFFB0C7FF);
-
+  
   //Gradient Colors
   static const Gradient linearGradient = LinearGradient(
     begin: Alignment(0.0, 0.0),

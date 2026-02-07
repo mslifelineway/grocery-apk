@@ -16,8 +16,6 @@ class BannerSliderController extends GetxController {
   }
 
   void onDotClicked(dynamic index) {
-    debugPrint('\n\n===> Dot clicked: $index');
-
     controller.animateToPage(
       index,
       duration: const Duration(milliseconds: 300),
