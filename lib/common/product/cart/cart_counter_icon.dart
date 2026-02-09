@@ -1,6 +1,5 @@
 import 'package:deshi_bazaar/utils/constants/colors.dart';
 import 'package:deshi_bazaar/utils/constants/sizes.dart';
-import 'package:deshi_bazaar/utils/device/device.utility.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -15,9 +14,9 @@ class CartCounterIcon extends StatelessWidget {
       children: [
         Icon(
           Iconsax.bag_2,
-          color: DeviceUtils.isDarkMode ? AppColors.dark : AppColors.light,
+          color: AppColors.light,
           size: AppSizes.iconLg,
-        ),
+        ), // Theme wise color and bg changes are not required because this combination works fine in both light and dark theme
         itemCount > 0
             ? Positioned(
                 right: 0,
@@ -25,18 +24,14 @@ class CartCounterIcon extends StatelessWidget {
                   width: AppSizes.iconSm,
                   height: AppSizes.iconSm,
                   decoration: BoxDecoration(
-                    color: DeviceUtils.isDarkMode
-                        ? AppColors.dark
-                        : AppColors.light,
+                    color: AppColors.light,
                     shape: BoxShape.circle,
                   ),
                   child: Center(
                     child: Text(
                       itemCount.toString(),
-                      style: Theme.of(context).textTheme.bodySmall!.apply(
-                        color: DeviceUtils.isDarkMode
-                            ? AppColors.light
-                            : AppColors.dark,
+                      style: Theme.of(context).textTheme.bodyMedium!.apply(
+                        color: AppColors.dark,
                         fontSizeFactor: 0.8,
                       ),
                     ),

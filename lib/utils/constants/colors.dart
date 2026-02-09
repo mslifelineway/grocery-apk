@@ -7,7 +7,7 @@ class AppColors {
   static const Color primary = Color(0xFF0CA201);
   static const Color secondary = Color(0xFFFFDB24);
   static const Color accent = Color(0xFFB0C7FF);
-  
+
   //Gradient Colors
   static const Gradient linearGradient = LinearGradient(
     begin: Alignment(0.0, 0.0),
@@ -21,10 +21,11 @@ class AppColors {
   static const Color textAccent = Colors.white;
 
   //Background Colors
+  static const Color white = Color(0xFFFFFFFF);
   static const Color light = Color(0xFFF6F6F6);
-  static const Color dark = Color(0xFF272727);
+  static const Color dark = Color(0xFF121212);
   static const Color bgLight = Color(0xFFF6F6F6);
-  static const Color bgDark = Color(0xFF272727);
+  static const Color bgDark = Color(0xFF121212);
   static const Color bgPrimary = Color(0xFF0CA201);
   static const Color bgSecondary = Color(0xFFFFDB24);
 
@@ -52,4 +53,8 @@ class AppColors {
   static const Color darkGrey = Color(0xFF4F4F4F);
   static const Color darkerGrey = Color(0xFF939393);
   static const Color grey = Color(0xFFE0E0E0);
+
+  /// Card colors
+  static const Color cardLight = Color(0xFFF5F5F5);
+  static const Color cardDark = Color(0xFF4F4F4F);
 }

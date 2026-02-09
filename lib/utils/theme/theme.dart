@@ -1,5 +1,6 @@
+import "package:deshi_bazaar/utils/constants/colors.dart";
 import "package:deshi_bazaar/utils/theme/appbar.theme.dart";
-import "package:deshi_bazaar/utils/theme/bttom-sheet.theme.dart";
+import "package:deshi_bazaar/utils/theme/bottom-sheet.theme.dart";
 import "package:deshi_bazaar/utils/theme/checkbox.theme.dart";
 import "package:deshi_bazaar/utils/theme/chip.theme.dart";
 import "package:deshi_bazaar/utils/theme/elevated-button.theme.dart";
@@ -7,6 +8,7 @@ import "package:deshi_bazaar/utils/theme/outlined-button.theme.dart";
 import "package:deshi_bazaar/utils/theme/text-field.theme.dart";
 import "package:flutter/material.dart";
 import "package:deshi_bazaar/utils/theme/text.theme.dart";
+import "package:deshi_bazaar/utils/theme/card.theme.dart";
 
 class AppTheme {
   AppTheme._(); // Private constructor and will not be called again and again
@@ -15,7 +17,7 @@ class AppTheme {
     useMaterial3: true,
     fontFamily: 'Poppins',
     brightness: Brightness.light,
-    primaryColor: Colors.blue,
+    primaryColor: AppColors.primary,
     scaffoldBackgroundColor: Colors.white,
     textTheme: AppTextTheme.lightTextTheme,
     elevatedButtonTheme: AppElevatedButtonTheme.lightElevatedButtonTheme,
@@ -25,12 +27,13 @@ class AppTheme {
     chipTheme: AppChipTheme.lightChipTheme,
     outlinedButtonTheme: AppOutlinedButtonTheme.lightOutlinedButtonTheme,
     inputDecorationTheme: AppTextFieldTheme.lightInputDecorationTheme,
+    cardTheme: AppCardTheme.lightCardTheme,
   );
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
     brightness: Brightness.dark,
-    primaryColor: Colors.blue,
+    primaryColor: AppColors.primary,
     scaffoldBackgroundColor: Colors.black,
     textTheme: AppTextTheme.darkTextTheme,
     elevatedButtonTheme: AppElevatedButtonTheme.darkElevatedButtonTheme,
@@ -40,5 +43,6 @@ class AppTheme {
     chipTheme: AppChipTheme.darkChipTheme,
     outlinedButtonTheme: AppOutlinedButtonTheme.darkOutlinedButtonTheme,
     inputDecorationTheme: AppTextFieldTheme.darkInputDecorationTheme,
+    cardTheme: AppCardTheme.darkCardTheme,
   );
 }

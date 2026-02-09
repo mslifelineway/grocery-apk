@@ -1,7 +1,6 @@
 import 'package:deshi_bazaar/utils/constants/colors.dart';
 import 'package:deshi_bazaar/utils/constants/sizes.dart';
 import 'package:deshi_bazaar/utils/constants/texts.dart';
-import 'package:deshi_bazaar/utils/device/device.utility.dart';
 import 'package:flutter/material.dart';
 
 class HomeAppBarTitle extends StatelessWidget {
@@ -16,8 +15,8 @@ class HomeAppBarTitle extends StatelessWidget {
         Text(
           AppTexts.testUserName,
           style: Theme.of(context).textTheme.headlineSmall!.apply(
-            color: DeviceUtils.isDarkMode ? AppColors.dark : AppColors.light,
-          ),
+            color: AppColors.light,
+          ), // Light color looks fine in dark and light background
         ),
 
         /// Location
@@ -26,7 +25,7 @@ class HomeAppBarTitle extends StatelessWidget {
             /// Location Icon
             Icon(
               Icons.location_on,
-              color: DeviceUtils.isDarkMode ? AppColors.dark : AppColors.light,
+              color: AppColors.light,
               size: AppSizes.iconSm,
             ),
             SizedBox(width: AppSizes.xs),
@@ -34,11 +33,9 @@ class HomeAppBarTitle extends StatelessWidget {
             /// Location
             Text(
               AppTexts.testLocation,
-              style: Theme.of(context).textTheme.bodySmall!.apply(
-                color: DeviceUtils.isDarkMode
-                    ? AppColors.dark
-                    : AppColors.light,
-              ),
+              style: Theme.of(
+                context,
+              ).textTheme.bodySmall!.apply(color: AppColors.light),
             ),
           ],
         ),

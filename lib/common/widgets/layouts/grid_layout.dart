@@ -7,7 +7,7 @@ class GridLayout extends StatelessWidget {
     required this.itemBuilder,
     required this.itemCount,
     this.crossAxisCount = 2,
-    this.mainAxisExtent = 288,
+    this.mainAxisExtent = AppSizes.gridViewMainAxisExtent,
     this.scrollable = false,
   });
 

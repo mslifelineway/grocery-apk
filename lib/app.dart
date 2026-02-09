@@ -10,7 +10,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    debugPrint('_____ APPLYING THEME: ${ThemeMode.dark}');
+
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
       themeMode: ThemeMode.system,

@@ -19,7 +19,9 @@ class AppSearchBar extends StatelessWidget {
         height: AppSizes.searchBarHeight,
         padding: const EdgeInsets.symmetric(horizontal: AppSizes.md),
         decoration: BoxDecoration(
-          color: DeviceUtils.isDarkMode ? AppColors.dark : AppColors.light,
+          color: DeviceUtils.isDarkMode
+              ? AppColors.darkerGrey
+              : AppColors.light,
           borderRadius: BorderRadius.circular(AppSizes.borderRadiusLg),
           boxShadow: AppShadow.searchBarShadow,
         ),
@@ -30,7 +32,9 @@ class AppSearchBar extends StatelessWidget {
             Text(
               AppTexts.searchProducts,
               style: Theme.of(context).textTheme.bodySmall!.apply(
-                color: AppColors.dark.withValues(alpha: 0.5),
+                color: DeviceUtils.isDarkMode
+                    ? AppColors.dark
+                    : AppColors.dark.withValues(alpha: 0.5),
               ),
             ),
           ],

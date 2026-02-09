@@ -1,5 +1,7 @@
 import 'package:deshi_bazaar/features/shop/controllers/banner_slider.controller.dart';
+import 'package:deshi_bazaar/utils/constants/colors.dart';
 import 'package:deshi_bazaar/utils/constants/sizes.dart';
+import 'package:deshi_bazaar/utils/device/device.utility.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -9,7 +11,8 @@ class BannerSliderDotNavigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final BannerSliderController controller = Get.find<BannerSliderController>();
+    final BannerSliderController controller =
+        Get.find<BannerSliderController>();
 
     return Center(
       child: Obx(
@@ -17,9 +20,12 @@ class BannerSliderDotNavigation extends StatelessWidget {
           activeIndex: controller.currentIndex.value,
           onDotClicked: controller.onDotClicked,
           count: controller.total,
-          effect: const ExpandingDotsEffect(
+          effect: ExpandingDotsEffect(
             dotHeight: 6.0,
             dotWidth: AppSizes.defaultSpace,
+            dotColor: DeviceUtils.isDarkMode
+                ? AppColors.darkerGrey
+                : AppColors.dark.withValues(alpha: 0.5),
           ),
         ),
       ),

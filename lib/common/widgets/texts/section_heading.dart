@@ -1,5 +1,7 @@
+import 'package:deshi_bazaar/utils/constants/colors.dart';
 import 'package:deshi_bazaar/utils/constants/sizes.dart';
 import 'package:deshi_bazaar/utils/constants/texts.dart';
+import 'package:deshi_bazaar/utils/device/device.utility.dart';
 import 'package:flutter/material.dart';
 
 class SectionHeading extends StatelessWidget {
@@ -30,7 +32,17 @@ class SectionHeading extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineSmall,
           ),
           if (showAction)
-            TextButton(onPressed: onActionPressed, child: Text(actionText)),
+            TextButton(
+              onPressed: onActionPressed,
+              child: Text(
+                actionText,
+                style: Theme.of(context).textTheme.labelSmall!.apply(
+                  color: DeviceUtils.isDarkMode
+                      ? AppColors.light
+                      : AppColors.dark.withValues(alpha: 0.6),
+                ),
+              ),
+            ),
         ],
       ),
     );
