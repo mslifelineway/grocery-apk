@@ -5,16 +5,17 @@ import 'package:flutter/material.dart';
 import 'package:deshi_bazaar/utils/constants/sizes.dart';
 
 class PrimaryHeaderContainer extends StatelessWidget {
-  const PrimaryHeaderContainer({super.key, this.child});
+  const PrimaryHeaderContainer({super.key, this.child, required this.height});
 
   final Widget? child;
+  final double height;
 
   @override
   Widget build(BuildContext context) {
     return UShapeContainer(
       child: Container(
         color: AppColors.bgPrimary,
-        height: AppSizes.primaryHeaderHeight,
+        height: height,
         child: Stack(
           children: [
             /// Decorative Circular Containers
@@ -23,8 +24,8 @@ class PrimaryHeaderContainer extends StatelessWidget {
               right: -160,
               child: CircularContainer(
                 backgroundColor: AppColors.bgLight.withValues(alpha: 0.1),
-                height: AppSizes.primaryHeaderHeight,
-                width: AppSizes.primaryHeaderHeight,
+                height: height,
+                width: height,
               ),
             ),
 
@@ -34,8 +35,8 @@ class PrimaryHeaderContainer extends StatelessWidget {
               right: -250,
               child: CircularContainer(
                 backgroundColor: AppColors.bgLight.withValues(alpha: 0.1),
-                height: AppSizes.primaryHeaderHeight,
-                width: AppSizes.primaryHeaderHeight,
+                height: height,
+                width: height,
               ),
             ),
 

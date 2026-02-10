@@ -71,9 +71,13 @@ class AppSizes {
   static const double gridViewSpacing = 16.0;
   static const double gridViewMainAxisExtent = 288;
 
-  //Primary Header Height
-  static const double primaryHeaderHeight = 320;
-
   // Clip Path
   static const double parabolaControlPoint = 30.0;
+
+  /// Home Screen
+  static const double homeHeaderHeight = 320;
+
+  /// Store Screen
+  static const double storeHeaderHeight = 170;
+  static const double storeHeaderExpandedHeight = 300;
 }

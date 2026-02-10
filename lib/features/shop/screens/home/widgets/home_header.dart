@@ -13,10 +13,11 @@ class HomeHeader extends StatelessWidget {
     return Stack(
       children: [
         /// To provide space for the primary header
-        SizedBox(height: AppSizes.primaryHeaderHeight + 15),
+        SizedBox(height: AppSizes.homeHeaderHeight + 15),
 
         /// Primary Header Container
         PrimaryHeaderContainer(
+          height: AppSizes.homeHeaderHeight,
           child: Column(
             children: [
               //Home App Bar

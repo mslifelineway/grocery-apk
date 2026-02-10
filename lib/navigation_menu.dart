@@ -1,4 +1,5 @@
 import 'package:deshi_bazaar/features/shop/screens/home/home.dart';
+import 'package:deshi_bazaar/features/shop/screens/store/store.dart';
 import 'package:deshi_bazaar/utils/constants/colors.dart';
 import 'package:deshi_bazaar/utils/constants/texts.dart';
 import 'package:deshi_bazaar/utils/device/device.utility.dart';
@@ -56,7 +57,7 @@ class NavigationController extends GetxController {
   RxInt selectedIndex = 0.obs;
   List<Widget> screens = <Widget>[
     HomeScreen(),
-    Container(),
+    StoreScreen(),
     Container(),
     Container(),
   ];
