@@ -26,13 +26,16 @@ class ProductCardVertical extends StatelessWidget {
     return GestureDetector(
       onTap: () {},
       child: Card(
-        child: Padding(
+        
+        child: Container(
+          width: 180,
           padding: const EdgeInsets.all(8.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               /// Thumbnail, Favorite icon and Discount tag
               RoundedContainer(
+                height: 180,
                 radius: AppSizes.cardRadiusMd,
                 backgroundColor: DeviceUtils.isDarkMode
                     ? AppColors.bgDark

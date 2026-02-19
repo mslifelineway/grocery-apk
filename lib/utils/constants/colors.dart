@@ -3,58 +3,82 @@ import "package:flutter/material.dart";
 class AppColors {
   AppColors._();
 
-  //Basic colors
-  static const Color primary = Color(0xFF0CA201);
-  static const Color secondary = Color(0xFFFFDB24);
-  static const Color accent = Color(0xFFB0C7FF);
+  // =========================================================
+  // BRAND COLORS (From your new Emerald Design System)
+  // =========================================================
+  static const Color primary = Color(0xFF2ECC71);      // Vibrant Emerald
+  static const Color secondary = Color(0xFF1B4332);    // Forest Green
+  static const Color accent = Color(0xFF1ED760);       // Neon Green Accent
 
-  //Gradient Colors
+  // =========================================================
+  // GRADIENT COLORS (Updated to Emerald Style)
+  // =========================================================
   static const Gradient linearGradient = LinearGradient(
     begin: Alignment(0.0, 0.0),
     end: Alignment(0.5, -0.5),
-    colors: [Color(0xFF0CA201), Color(0xFFFFDB24), Color(0xFF0CA201)],
+    colors: [
+      Color(0xFF2ECC71),
+      Color(0xFF1ED760),
+      Color(0xFF1B4332),
+    ],
   );
 
-  //Text Colors
-  static const Color textPrimary = Color(0xFF333333);
-  static const Color textSecondary = Color(0xFF6C7570);
+  // =========================================================
+  // TEXT COLORS
+  // =========================================================
+  static const Color textPrimary = Color(0xFF0B3D2E);   // Dark Forest
+  static const Color textSecondary = Color(0xFF52796F); // Muted Sage
   static const Color textAccent = Colors.white;
 
-  //Background Colors
+  // =========================================================
+  // BACKGROUND COLORS
+  // =========================================================
   static const Color white = Color(0xFFFFFFFF);
-  static const Color light = Color(0xFFF6F6F6);
-  static const Color dark = Color(0xFF121212);
-  static const Color bgLight = Color(0xFFF6F6F6);
-  static const Color bgDark = Color(0xFF121212);
-  static const Color bgPrimary = Color(0xFF0CA201);
-  static const Color bgSecondary = Color(0xFFFFDB24);
+  static const Color light = Color(0xFFF8F9FA);          // Off White
+  static const Color dark = Color(0xFF022C22);           // Deep Emerald
 
-  //Background Container Colors
-  static const Color lightContainer = Color(0xFFF6F6F6);
-  static const Color darkContainer = Color(0xFF474747);
+  static const Color bgLight = Color(0xFFF8F9FA);
+  static const Color bgDark = Color(0xFF022C22);
 
-  //Button Colors
-  static const Color btnPrimary = Color(0xFF0CA201);
-  static const Color btnSecondary = Color(0xFFFFDB24);
-  static const Color btnDisabled = Color(0xFFC4C4C4);
+  static const Color bgPrimary = Color(0xFF2ECC71);
+  static const Color bgSecondary = Color(0xFF1B4332);
 
-  //Border Colors
-  static const Color borderPrimary = Color(0xFFB6B2B1);
-  static const Color borderSecondary = Color(0xFFECECEC);
+  // =========================================================
+  // CONTAINER COLORS
+  // =========================================================
+  static const Color lightContainer = Color(0xFFFFFFFF);
+  static const Color darkContainer = Color(0xFF064E3B);
 
-  //Error and validations colors
-  static const Color error = Color(0xFFEB001B);
-  static const Color success = Color(0xFF0CA201);
+  // =========================================================
+  // BUTTON COLORS
+  // =========================================================
+  static const Color btnPrimary = Color(0xFF2ECC71);
+  static const Color btnSecondary = Color(0xFF1B4332);
+  static const Color btnDisabled = Color(0xFFBDC3C7);
+
+  // =========================================================
+  // BORDER COLORS
+  // =========================================================
+  static const Color borderPrimary = Color(0xFFE5E7EB);  // Soft Grey
+  static const Color borderSecondary = Color(0xFF0F3D33); // Dark Emerald Border
+
+  // =========================================================
+  // STATUS COLORS
+  // =========================================================
+  static const Color error = Color(0xFFD4183D);
+  static const Color success = Color(0xFF2ECC71);
   static const Color warning = Color(0xFFF79E1B);
   static const Color info = Color(0xFF2CB6E7);
 
-  //Neutral Shades
-  static const Color black = Color(0xFF232323);
-  static const Color darkGrey = Color(0xFF4F4F4F);
-  static const Color darkerGrey = Color(0xFF939393);
-  static const Color grey = Color(0xFFE0E0E0);
+  // =========================================================
+  // NEUTRAL SHADES
+  // =========================================================
+  static const Color black = Color(0xFF000000);
+  static const Color darkGrey = Color(0xFF52796F);
+  static const Color darkerGrey = Color(0xFF95B8B1);
+  static const Color grey = Color(0xFFE5E7EB);
 
   /// Card colors
-  static const Color cardLight = Color(0xFFF5F5F5);
-  static const Color cardDark = Color(0xFF4F4F4F);
+  static const Color cardLight = Color(0xFFFFFFFF);
+  static const Color cardDark = Color(0xFF064E3B);
 }

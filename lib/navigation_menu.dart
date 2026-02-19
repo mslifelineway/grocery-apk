@@ -1,5 +1,6 @@
 import 'package:deshi_bazaar/features/shop/screens/home/home.dart';
 import 'package:deshi_bazaar/features/shop/screens/store/store.dart';
+import 'package:deshi_bazaar/features/shop/screens/wishlist/wishlist.dart';
 import 'package:deshi_bazaar/utils/constants/colors.dart';
 import 'package:deshi_bazaar/utils/constants/texts.dart';
 import 'package:deshi_bazaar/utils/device/device.utility.dart';
@@ -35,12 +36,16 @@ class NavigationMenu extends StatelessWidget {
               label: AppTexts.home,
             ),
             NavigationDestination(
-              icon: Icon(Iconsax.shop),
-              label: AppTexts.store,
+              icon: Icon(Iconsax.category),
+              label: AppTexts.categories,
             ),
             NavigationDestination(
-              icon: Icon(Iconsax.heart),
-              label: AppTexts.wishlist,
+              icon: Icon(Iconsax.box),
+              label: AppTexts.orders,
+            ),
+            NavigationDestination(
+              icon: Icon(Iconsax.shopping_cart),
+              label: AppTexts.cart,
             ),
             NavigationDestination(
               icon: Icon(Iconsax.user),
@@ -58,7 +63,7 @@ class NavigationController extends GetxController {
   List<Widget> screens = <Widget>[
     HomeScreen(),
     StoreScreen(),
-    Container(),
+    WishlistScreen(),
     Container(),
   ];
 

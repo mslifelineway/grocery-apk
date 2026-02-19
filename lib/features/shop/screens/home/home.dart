@@ -52,9 +52,7 @@ class HomeScreen extends StatelessWidget {
               ),
               child: GridLayout(
                 itemCount: 20,
-                mainAxisExtent:
-                    AppSizes.gridViewMainAxisExtent -
-                    88, // Looking too big, so reducing by some value. Later it may be removed.
+                mainAxisExtent: AppSizes.gridViewMainAxisExtent,
                 itemBuilder: (context, index) {
                   return ProductCardVertical(
                     imageUrl:

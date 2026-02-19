@@ -80,4 +80,6 @@ class AppSizes {
   /// Store Screen
   static const double storeHeaderHeight = 170;
   static const double storeHeaderExpandedHeight = 300;
+  static const double wishlistHeaderHeight = 170;
+  static const double wishlistHeaderExpandedHeight = 300;
 }

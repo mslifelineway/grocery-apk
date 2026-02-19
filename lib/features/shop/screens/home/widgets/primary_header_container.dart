@@ -2,8 +2,6 @@ import 'package:deshi_bazaar/common/widgets/shapes/circular_container.dart';
 import 'package:deshi_bazaar/common/widgets/shapes/u_shape_container.dart';
 import 'package:deshi_bazaar/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:deshi_bazaar/utils/constants/sizes.dart';
-
 class PrimaryHeaderContainer extends StatelessWidget {
   const PrimaryHeaderContainer({super.key, this.child, required this.height});
 

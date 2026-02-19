@@ -26,6 +26,9 @@ class AppTexts {
   static const String products = 'Products';
   static const String testDiscountValue = '20% OFF';
   static const String brands = 'Brands';
+  static const String categories = 'Categories';
+  static const String orders = 'Orders';
+  static const String cart = 'Cart';
 
   /// Login screen
   static const String loginTitle = "Deshi Bazaar";
