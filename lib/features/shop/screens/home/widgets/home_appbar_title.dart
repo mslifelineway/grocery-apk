@@ -13,7 +13,7 @@ class HomeAppBarTitle extends StatelessWidget {
       children: [
         /// User Name
         Text(
-          AppTexts.testUserName,
+          StaticValues.testUserName,
           style: Theme.of(context).textTheme.headlineSmall!.apply(
             color: AppColors.light,
           ), // Light color looks fine in dark and light background
@@ -32,7 +32,7 @@ class HomeAppBarTitle extends StatelessWidget {
 
             /// Location
             Text(
-              AppTexts.testLocation,
+              StaticValues.testLocation,
               style: Theme.of(
                 context,
               ).textTheme.bodySmall!.apply(color: AppColors.light),

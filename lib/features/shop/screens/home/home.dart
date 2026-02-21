@@ -43,7 +43,7 @@ class HomeScreen extends StatelessWidget {
 
             /// Product List Section
             //Section Heading
-            SectionHeading(title: AppTexts.products),
+            SectionHeading(title: AppTexts.products, showPadding: true),
 
             /// Vertical product grid view
             Padding(

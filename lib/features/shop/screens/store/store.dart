@@ -25,7 +25,7 @@ class StoreScreen extends StatelessWidget {
                   StorePrimaryHeader(),
 
                   /// Brand Heading
-                  SectionHeading(title: AppTexts.brands),
+                  SectionHeading(title: AppTexts.brands, showPadding: true),
 
                   /// Brands List
                   RoundedContainer(showBorder: true),

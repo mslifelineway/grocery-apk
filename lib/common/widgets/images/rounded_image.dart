@@ -12,7 +12,8 @@ class RoundedImage extends StatelessWidget {
     this.border,
     this.onTap,
     this.isNetworkImage = false,
-    this.boxFit = BoxFit.cover, // Border radius in ClipRRect works best with BoxFit.cover
+    this.boxFit =
+        BoxFit.cover, // Border radius in ClipRRect works best with BoxFit.cover
     this.borderRadius = AppSizes.md,
     this.applyBorderRadius = true,
   });

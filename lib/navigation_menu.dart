@@ -1,3 +1,4 @@
+import 'package:deshi_bazaar/features/personalization/screen/profile/profile.dart';
 import 'package:deshi_bazaar/features/shop/screens/home/home.dart';
 import 'package:deshi_bazaar/features/shop/screens/store/store.dart';
 import 'package:deshi_bazaar/features/shop/screens/wishlist/wishlist.dart';
@@ -65,6 +66,7 @@ class NavigationController extends GetxController {
     StoreScreen(),
     WishlistScreen(),
     Container(),
+    ProfileScreen(),
   ];
 
   void onDestinationSelected(int index) {

@@ -11,17 +11,20 @@ class SectionHeading extends StatelessWidget {
     this.showAction = true,
     this.actionText = AppTexts.viewAll,
     this.onActionPressed,
+    this.showPadding = false,
   });
 
   final String title;
-  final bool showAction;
+  final bool showAction, showPadding;
   final String actionText;
   final VoidCallback? onActionPressed;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: AppSizes.defaultSpace),
+      padding: showPadding
+          ? const EdgeInsets.symmetric(horizontal: AppSizes.defaultSpace)
+          : EdgeInsets.zero,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

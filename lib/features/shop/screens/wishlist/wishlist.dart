@@ -11,10 +11,12 @@ class WishlistScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<String> banners = [
-      AppImages.banner1,
-      AppImages.banner2,
-      AppImages.banner3,
-      AppImages.banner3,
+      AppImages.blueShoe,
+      AppImages.blackShoe,
+      AppImages.blueShoe,
+      AppImages.blackShoe,
+      AppImages.blueShoe,
+      AppImages.blackShoe,
     ];
 
     return Scaffold(

@@ -53,7 +53,7 @@ class ResetPasswordScreen extends StatelessWidget {
                 children: [
                   TextSpan(text: AppTexts.passwordResetLinkSent),
                   TextSpan(
-                    text: " ${AppTexts.testUserEmail}. ",
+                    text: " ${StaticValues.testUserEmail}. ",
                     style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   TextSpan(text: AppTexts.checkYourInboxToReset),

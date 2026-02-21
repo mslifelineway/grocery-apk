@@ -15,9 +15,6 @@ class AppTexts {
   static const String submit = 'Submit';
   static const String done = 'Done';
   static const String continueTxt = 'Continue';
-  static const String testUserEmail = 'user@email.com';
-  static const String testUserName = 'John Doe';
-  static const String testLocation = 'Bettiah, Bihar, India';
   static const String home = 'Home';
   static const String store = 'Store';
   static const String wishlist = 'Wishlist';
@@ -83,6 +80,18 @@ class AppTexts {
   static const String test = "Deshi Bazaar";
   static const String popularCategories = "Popular Categories";
   static const String fruits = "Fruits";
+
+  /// Profile Screen
+  static const String accountSettings = "Account Settings";
+  static const String myAddresses = "My Addresses";
+  static const String setShoppingDeliveryAddresses =
+      "Set Shopping Delivery Addresses";
+  static const String myCart = "My Cart";
+  static const String myCartSubtitle =
+      "Add or remove products and move to checkout";
+  static const String myOrders = "My Orders";
+  static const String myOrdersSubtitle = "In-progress and completed orders";
+  static const String logout = "Logout";
 }
 
 class StaticValues {
@@ -95,4 +104,8 @@ class StaticValues {
   };
 
   static String defaultCurrency = "INR";
+
+  static const String testUserEmail = 'user@email.com';
+  static const String testUserName = 'John Doe';
+  static const String testLocation = 'Bettiah, Bihar, India';
 }

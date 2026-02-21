@@ -29,4 +29,8 @@ class AppImages {
   /// ---- PASSWORD RESET
   static const String passwordResetSentImage =
       'assets/images/password_reset_sent.png';
+
+  /// Product images
+  static const String blueShoe = "assets/products/shoe-blue.png";
+  static const String blackShoe = "assets/products/shoe-black.png";
 }

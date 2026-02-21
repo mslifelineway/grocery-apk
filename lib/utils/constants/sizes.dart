@@ -82,4 +82,7 @@ class AppSizes {
   static const double storeHeaderExpandedHeight = 300;
   static const double wishlistHeaderHeight = 170;
   static const double wishlistHeaderExpandedHeight = 300;
+
+  /// Profile Screen
+  static const double profileHeaderHeight = 170;
 }

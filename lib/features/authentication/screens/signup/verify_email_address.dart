@@ -54,7 +54,7 @@ class VerifyEmailAddressScreen extends StatelessWidget {
                 children: [
                   TextSpan(text: AppTexts.verifyEmailLinkSent),
                   TextSpan(
-                    text: " ${AppTexts.testUserEmail}. ",
+                    text: " ${StaticValues.testUserEmail}. ",
                     style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   TextSpan(text: AppTexts.checkYourInboxToVerifyEmail),
