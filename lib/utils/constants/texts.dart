@@ -26,6 +26,15 @@ class AppTexts {
   static const String categories = 'Categories';
   static const String orders = 'Orders';
   static const String cart = 'Cart';
+  static const String logout = "Logout";
+  static const String editProfile = "Edit Profile";
+  static const String name = "Name";
+  static const String username = "Username";
+  static const String userName = "User Name";
+  static const String userId = "User ID";
+  static const String userEmail = "User Email";
+  static const String gender = "Gender";
+  static const String closeAccount = "Close Account";
 
   /// Login screen
   static const String loginTitle = "Deshi Bazaar";
@@ -91,7 +100,7 @@ class AppTexts {
       "Add or remove products and move to checkout";
   static const String myOrders = "My Orders";
   static const String myOrdersSubtitle = "In-progress and completed orders";
-  static const String logout = "Logout";
+  static const String profileSettings = "Profile Settings";
 }
 
 class StaticValues {
@@ -105,7 +114,11 @@ class StaticValues {
 
   static String defaultCurrency = "INR";
 
+  static const String testUserId = '1234';
   static const String testUserEmail = 'user@email.com';
-  static const String testUserName = 'John Doe';
+  static const String testName = 'John Doe';
+  static const String testUserName = 'green_pea';
   static const String testLocation = 'Bettiah, Bihar, India';
+  static const String testPhoneNumber = '+91 9876543210';
+  static const String male = "Male";
 }

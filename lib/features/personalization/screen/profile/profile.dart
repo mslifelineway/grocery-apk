@@ -1,8 +1,11 @@
+import 'package:deshi_bazaar/common/styles/padding.dart';
 import 'package:deshi_bazaar/common/widgets/texts/section_heading.dart';
+import 'package:deshi_bazaar/features/personalization/screen/profile/edit/edit_profile.dart';
 import 'package:deshi_bazaar/features/personalization/screen/profile/widgets/profile_header.dart';
-import 'package:deshi_bazaar/features/personalization/screen/profile/widgets/profile_tile.dart';
+import 'package:deshi_bazaar/features/personalization/screen/profile/profile_tile.dart';
 import 'package:deshi_bazaar/utils/constants/texts.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
@@ -40,9 +43,7 @@ class ProfileScreen extends StatelessWidget {
 
             /// Body part
             Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: AppSizes.defaultSpace,
-              ),
+              padding: AppPadding.screenPadding,
               child: Column(
                 children: [
                   /// User profile details
@@ -58,7 +59,7 @@ class ProfileScreen extends StatelessWidget {
                       style: Theme.of(context).textTheme.bodyMedium,
                     ),
                     trailing: IconButton(
-                      onPressed: () {},
+                      onPressed: () => Get.to(() => const EditProfileScreen()),
                       icon: Icon(Iconsax.edit),
                     ),
                   ),
