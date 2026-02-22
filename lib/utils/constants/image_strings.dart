@@ -33,4 +33,7 @@ class AppImages {
   /// Product images
   static const String blueShoe = "assets/products/shoe-blue.png";
   static const String blackShoe = "assets/products/shoe-black.png";
+
+  /// Brand logos
+  static const String bataLogoImage = "assets/brands/bata.png";
 }

@@ -18,18 +18,25 @@ class ProductPrice extends StatelessWidget {
   final bool smallSize, lineThrough;
 
   String getPrice(double price) {
-    return '$currency $price';
+    return '$currency$price';
   }
 
   @override
   Widget build(BuildContext context) {
     return Text(
       getPrice(price),
-      style: smallSize
-          ? Theme.of(context).textTheme.titleLarge
-          : Theme.of(context).textTheme.headlineMedium!.apply(
-              decoration: lineThrough ? TextDecoration.lineThrough : null,
-            ),
+      style:
+          (smallSize
+                  ? Theme.of(context).textTheme.titleLarge
+                  : Theme.of(context).textTheme.headlineMedium)!
+              .apply(
+                decoration: lineThrough ? TextDecoration.lineThrough : null,
+                color: lineThrough
+                    ? Theme.of(
+                        context,
+                      ).textTheme.titleLarge!.color!.withValues(alpha: 0.7)
+                    : null,
+              ),
       overflow: textOverflow ?? TextOverflow.ellipsis,
       maxLines: maxLines,
     );

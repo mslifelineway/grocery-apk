@@ -13,6 +13,7 @@ class CircularImage extends StatelessWidget {
     this.borderColor = AppColors.primary,
     this.padding = 0,
     this.backgroundColor,
+    this.noBorder = false,
   });
 
   final double width, height, borderWidth, padding;
@@ -20,6 +21,7 @@ class CircularImage extends StatelessWidget {
   final bool isNetworkImage;
   final String imageUrl;
   final Color borderColor;
+  final bool noBorder;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +34,9 @@ class CircularImage extends StatelessWidget {
             backgroundColor ??
             (DeviceUtils.isDarkMode ? AppColors.dark : AppColors.light),
         borderRadius: BorderRadius.circular(1000),
-        border: Border.all(color: borderColor, width: borderWidth),
+        border: borderWidth == 0
+            ? null
+            : Border.all(color: borderColor, width: borderWidth),
       ),
       child: ClipRRect(
         borderRadius: BorderRadiusGeometry.circular(1000),

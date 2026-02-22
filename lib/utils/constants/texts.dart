@@ -35,6 +35,9 @@ class AppTexts {
   static const String userEmail = "User Email";
   static const String gender = "Gender";
   static const String closeAccount = "Close Account";
+  static const String description = "Description";
+  static const String colors = "Colors";
+  static const String sizes = "Sizes";
 
   /// Login screen
   static const String loginTitle = "Deshi Bazaar";
