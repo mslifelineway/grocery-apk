@@ -8,7 +8,10 @@ import 'package:deshi_bazaar/utils/constants/sizes.dart';
 import 'package:deshi_bazaar/utils/constants/texts.dart';
 import 'package:deshi_bazaar/utils/device/device.utility.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+
+import '../../../features/shop/screens/product_details/product_details.dart';
 
 class ProductCardVertical extends StatelessWidget {
   const ProductCardVertical({
@@ -24,9 +27,8 @@ class ProductCardVertical extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => const ProductDetailsScreen()),
       child: Card(
-        
         child: Container(
           width: 180,
           padding: const EdgeInsets.all(8.0),
@@ -76,8 +78,6 @@ class ProductCardVertical extends StatelessWidget {
                       top: 8,
                       right: 8,
                       child: CircularIcon(
-                        width: AppSizes.xl,
-                        height: AppSizes.xl,
                         iconData: isFavorite ? Iconsax.heart5 : Iconsax.heart,
                         color: isFavorite ? Colors.red : null,
                         onPressed: () {},

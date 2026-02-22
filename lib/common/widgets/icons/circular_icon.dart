@@ -6,8 +6,6 @@ import 'package:flutter/material.dart';
 class CircularIcon extends StatelessWidget {
   const CircularIcon({
     super.key,
-    this.width,
-    this.height,
     this.size = AppSizes.iconMd,
     this.iconData,
     this.backgroundColor,
@@ -15,7 +13,7 @@ class CircularIcon extends StatelessWidget {
     this.onPressed,
   });
 
-  final double? width, height, size;
+  final double? size;
   final IconData? iconData;
   final Color? backgroundColor, color;
   final VoidCallback? onPressed;
@@ -23,14 +21,12 @@ class CircularIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: width,
-      height: height,
       decoration: BoxDecoration(
         color:
             backgroundColor ??
             (DeviceUtils.isDarkMode
-                ? AppColors.dark.withValues(alpha: 0.9)
-                : AppColors.light.withValues(alpha: 0.9)),
+                ? AppColors.light.withValues(alpha: 0.1)
+                : AppColors.dark.withValues(alpha: 0.1)),
         borderRadius: BorderRadius.circular(
           1000,
         ), // Large value to ensure it's circular
