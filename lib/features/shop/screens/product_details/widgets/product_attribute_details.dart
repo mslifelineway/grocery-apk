@@ -19,14 +19,14 @@ class ProductAttributeDetails extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            AppTexts.description,
+            AppTexts.variation,
             style: Theme.of(context).textTheme.titleMedium,
           ),
 
           SizedBox(height: AppSizes.spaceBetweenItems / 2),
 
           Text(
-            'Description and additional informations related UI will be designed here...',
+            'Variation and additional informations related UI will be designed here...',
             style: Theme.of(context).textTheme.bodyMedium,
           ),
         ],

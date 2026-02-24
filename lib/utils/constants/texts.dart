@@ -38,6 +38,9 @@ class AppTexts {
   static const String description = "Description";
   static const String colors = "Colors";
   static const String sizes = "Sizes";
+  static const String checkout = "Checkout";
+  static const String buyNow = "Buy Now";
+  static const String variation = "Variation";
 
   /// Login screen
   static const String loginTitle = "Deshi Bazaar";

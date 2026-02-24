@@ -1,3 +1,4 @@
+import "package:deshi_bazaar/utils/constants/colors%20copy.dart";
 import "package:flutter/material.dart";
 
 class AppElevatedButtonTheme {
@@ -7,11 +8,11 @@ class AppElevatedButtonTheme {
       ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           elevation: 0,
-          backgroundColor: Colors.blue,
+          backgroundColor: AppColors.primary,
           foregroundColor: Colors.white,
           disabledBackgroundColor: Colors.grey,
           disabledForegroundColor: Colors.grey,
-          side: const BorderSide(color: Colors.blue),
+          side: const BorderSide(color: AppColors.primary),
           padding: const EdgeInsets.symmetric(vertical: 18),
           textStyle: const TextStyle(
             fontSize: 16,
@@ -28,11 +29,11 @@ class AppElevatedButtonTheme {
       ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           elevation: 0,
-          backgroundColor: Colors.blue,
+          backgroundColor: AppColors.primary,
           foregroundColor: Colors.white,
           disabledBackgroundColor: Colors.grey,
           disabledForegroundColor: Colors.grey,
-          side: const BorderSide(color: Colors.blue),
+          side: const BorderSide(color: AppColors.primary),
           padding: const EdgeInsets.symmetric(vertical: 18),
           textStyle: const TextStyle(
             fontSize: 16,

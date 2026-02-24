@@ -1,8 +1,11 @@
 import 'package:deshi_bazaar/common/styles/padding.dart';
 import 'package:deshi_bazaar/utils/constants/texts.dart';
 import 'package:flutter/material.dart';
+import 'package:readmore/readmore.dart';
 
+import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/sizes.dart';
+import 'widgets/product_action_bar.dart';
 import 'widgets/product_attribute_details.dart';
 import 'widgets/product_details_header.dart';
 import 'widgets/product_metadata_details.dart';
@@ -60,7 +63,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   ProductMetaDataDetails(),
                   SizedBox(height: AppSizes.spaceBetweenItems),
 
-                  /// Product attributes descriptions and additional informations goes here.
+                  /// Product attributes variants etc.
                   ProductAttributeDetails(),
                   SizedBox(height: AppSizes.spaceBetweenItems),
 
@@ -78,12 +81,42 @@ class ProductDetailsScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                  SizedBox(height: AppSizes.spaceBetweenSections),
+
+                  /// Description
+                  SectionHeading(
+                    title: AppTexts.description,
+                    showAction: false,
+                  ),
+                  SizedBox(height: AppSizes.spaceBetweenItems),
+
+                  ReadMoreText(
+                    "This is a sample product description. It provides detailed information about the product features, benefits, and usage instructions. It can be expanded or collapsed to show more or less content as needed.",
+                    trimLines: 2,
+                    trimMode: TrimMode.Line,
+                    trimCollapsedText: 'Read more',
+                    trimExpandedText: ' Show less',
+                    moreStyle: TextStyle(
+                      fontSize: 14.0,
+                      // color: AppColors.primary,
+                      fontWeight: FontWeight.w600,
+                    ),
+                    lessStyle: TextStyle(
+                      fontSize: 14.0,
+                      //  color: AppColors.primary,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+
+                  SizedBox(height: AppSizes.spaceBetweenSections),
                 ],
               ),
             ),
           ],
         ),
       ),
+
+      bottomNavigationBar: ProductActionBar(),
     );
   }
 }
